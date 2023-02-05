@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Collapsible sidebar using Bootstrap 4</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <!--Searchbar-->
+                <div class="input-group">
+                    <input type="search" class="form-control rounded" placeholder="Search/搜索" aria-label="Search" aria-describedby="search-addon" />
+                    <button type="button" class="btn search-btn"><i class="fas fa-search"></i></button>
+                  </div>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <li>
+                        <a href="#" class = "major-heading">Li Fang-Kuei Society <br>李方桂研究學會</a>
+                    </li>
+                    <li>
+                        <a href="#">Our Work 學會工作</a>
+                    </li>
+                    <li>
+                        <a href="#">Our Organization 學會組織</a>
+                    </li>
+                </li>
+                <li>
+                    <a href="#BCLmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">BCL 中國語言學集刊</a>
+                    <ul class="collapse list-unstyled" id="BCLmenu">
+                        <li>
+                            <a href="#">About BCL 中國語言學集刊</a>
+                        </li>
+                        <li>
+                            <a href="#">Preface 發刊詞</a>
+                        </li>
+                        <li>
+                            <a href="#">Table of Contents of BCL 目錄</a>
+                        </li>
+                        <li>
+                            <a href="#">BCL Style Sheet 投稿格式</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Awards for Services 服務貢獻獎</a>
+                </li>
+                <li>
+                    <a href="#Awardmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">LFK Awards and Grant<br>學會獎項及補助</a>
+                    <ul class="collapse list-unstyled" id="Awardmenu">
+                        <li>
+                            <a href="#">Li Fang-Kuei Book Awards 李方桂語言學論著獎</a>
+                        </li>
+                        <li>
+                            <a href="#">LFK Field Work Award 李方桂田野調查獎</a>
+                        </li>
+                        <li>
+                            <a href="#">LFK Dissertation Award 李方桂博士論文獎</a>
+                        </li>
+                        <li>
+                            <a href="#">LFK Graduate Student 李方桂研究生學術會議旅費補助</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#Activitymenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Activities 學會活動</a>
+                    <ul class="collapse list-unstyled" id="Activitymenu">
+                        <li>
+                            <a href="#">2006 Int'l Conference 2006年國際學術會議 </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#YSmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Young Scholars Symposium <br> 青年學者研討會 </a>
+                    <ul class="collapse list-unstyled" id="YSmenu">
+                        <li>
+                            <a href="#">Young Scholars 青年學者研討會</a>
+                        </li>
+                        <li>
+                            <a href="#">2013 YS Symposium 2013 青年學者研討會</a>
+                        </li>
+                        <li>
+                            <a href="#">2018 YS Symposium 2018 青年學者研討會</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#Supportmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Appeal for Support 籲請支持</a>
+                    <ul class="collapse list-unstyled" id="Supportmenu">
+                        <li>
+                            <a href="#">Sollicitation Letter 募捐信</a>
+                        </li>
+                        <li>
+                            <a href="#">Donors 贊助人名單</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class = "major-heading">About PROF. LI FANG-KUEI <br>關於李方桂先生</a>
+                </li>
+                <li>
+                    <a href="#SWorkmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Scholarly Work 李方桂先生業績</a>
+                    <ul class="collapse list-unstyled" id="SWorkmenu">
+                        <li>
+                            <a href="#">Father of Non-Chinese Linguistics 「非漢語」語言學之父</a>
+                        </li>
+                        <li>
+                            <a href="#">Bibliography of Prof.Li 李方桂先生著作目錄</a>
+                        </li>
+                        <li>
+                            <a href="#">Preface of Collections of Essays 《李方桂全集》總序</a>
+                        </li>
+                        <li>
+                            <a href="#">Papers in BIHP 《史語所集刊》文章</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#SeminalWmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Seminal Works 李方桂先生代表作</a>
+                    <ul class="collapse list-unstyled" id="SeminalWmenu">
+                        <li>
+                            <a href="#">Final Consonants in Old Chinese 論韻尾輔音</a>
+                        </li>
+                        <li>
+                            <a href="#">Phonology of Old Chinese 上古音韻表</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#Aboutmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">About Prof.Li 李方桂先生其人其事</a>
+                    <ul class="collapse list-unstyled" id="Aboutmenu">
+                        <li>
+                            <a href="#">Manuscripts 李方桂先生手跡</a>
+                        </li>
+                        <li>
+                            <a href="#">Paintings 李方桂先生畫冊</a>
+                        </li>
+                        <li>
+                            <a href="#">Vignettes of My Father 在一個涼爽的地方</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#Memorymenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">To His Memory 紀念李方桂先生</a>
+                    <ul class="collapse list-unstyled" id="Memorymenu">
+                        <li>
+                            <a href="#">Pang-Hsin Ting 丁邦新文</a>
+                        </li>
+                        <li>
+                            <a href="#">South Coblin 柯蔚南文</a>
+                        </li>
+                        <li>
+                            <a href="#">In Memoriam | UW 1987 追悼會 | 1987</a>
+                        </li>
+                        <li>
+                            <a href="#">1998 Int'l Symposium 1998年學者研討會</a>
+                        </li>
+                        <li>
+                            <a href="#">2002 Int'l Symposium 2002年學者研討會</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class = "major-heading">CONTACT US 聯繫我們</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <header>
+                <div id="header-img">
+                <img src="logo.png" alt="header picture" class="img-fluid">
+                </div>
+            </header>
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn custom-hamburger">
+                        <i class="fas fa-align-left"></i>
+                        <span></span>
+                    </button>
+                    
+                    <button onclick="location.href = '#en-text';" class="btn custom-jump" id="jump-button">Jump To English</button>
+                </div>
+                
+            </nav>
+
+            <div class="line"></div>
+
+            <h2>紀念李方桂先生中國語言學研究學會緣起</h2>
+            <br>
+                <p>我們該用什麼方法來紀念一位傑出的學術大師？設立論著獎、召開學術會議、發行學報、編印全集？在許多方法之中哪一個方法是最適當的？正確的答案也許是成立一個學會來做以上所有的事，推廣他最關心的學問。發掘後進、推陳出新，使這一門學問能夠發揚光大， 精益求精。紀念李方桂先生中國語言學研究學會就是在這樣的考慮之下成立的。</p>
+                <p>李方桂先生是語言學大師，一生研究漢語、藏語、侗台語、印地安語。中國語言學並不能涵蓋先生全部的論著， 但卻是他最關心也是用力最深的學問。他是漢語上古音的權威， 擬測的上古音系統是目前最好的系統； 他討論古藏語的構詞、研究所有的古代西藏碑文， 解釋漢藏對音、西藏歷史； 他是侗台語比較研究的開山大師， 從田野調查到比較侗台語， 再擬測古代侗台語音系； 他精研印地安語Athabaskan 中好幾種語言： Sarcee、 Mattole、 Chipewyan、 Hare。在每一個領域 先生都有突破性的發現。</p>
+                <p>1949 年開始，先生在西雅圖華盛頓大學執教， 從四十七歲到六十七歲， 把學問最成熟的二十年貢獻給這所大學。 這個學會就是由現在華大的余靄芹教授倡議， 立刻得到同行、 學生們的熱烈支持， 在2003 年成立， 募集到的基金接近美金二十萬。由於經費有限， 上述的工作只能選擇性地推展。 幸而編印全集的計畫由清華大學--- 先生的母校進行， 得到顧校長秉林的支持， 丁邦新、王啟龍任正、 副主編， 學會的同仁South W. Coblin (柯蔚南)、 龔煌城、 梅祖麟、 余靄芹等都大力參與， 已經接近完成。</p>
+                <p>先生一生獲獎無數， 大學畢業時就是優良學生會 Phi Beta Kappa 的會員；1948 年當選中央研究院第一屆的院士； 後來得到美國密歇根大學、 香港中文大學的榮譽博士。 最難得的是1985 年泰國朱拉隆功大學表揚 先生對台語傑出的貢獻， 由泰王的姐姐頒授榮譽獎牌。
+                <p>學問沒有國界， 李方桂先生學術上的成就是世界性的， 他跟趙元任先生齊名， 是中國語言學界兩位開闢草萊的大師。 我們希望這個學會能夠永久存在，在他的同行、 學生、 學生的學生以及千千萬萬年輕學人的手中， 把中國語言學的新發現推向世界， 成為不朽的真理。</p>
+                <p>創會首屆會長
+                <br>丁邦新</p>
+            <br>
+
+            <div class="line"></div>
+
+            <h2 id="en-text">Message from the President of
+                Li Fang-Kuei Society of Chinese Linguistics
+                </h2>
+                <br>
+                
+                <p>Dear Friends and Colleagues,</p>
+                <p>On October 1, 2003 the Li Fang-Kuei Society for Chinese Linguistics was founded with the primary goal of promoting and advancing academic and scholarly activities in the areas of Chinese descriptive, comparative, and historical dialectology in particular, and in Chinese historical linguistics and Sino-Tibetan linguistics in general. In pursuit of this goal, the Society’s planned activities include supporting (1) research subsidies for scholars and students in Chinese linguistics, including grants in support of linguistic field work and travel grants for graduate students wishing to attend conferences connected with the field; (2) scholarships for graduate students and postdoctoral fellowships for young scholars in Chinese linguistics; (3) interchange of scholarly ideas in a global context through seminars, workshops and co-operation among various international research institutions; (4) the institution of a visiting scholar’s program; and (5) dissemination of research results through publications, in particular through a new journal entitled the Bulletin of Chinese Linguistics.</p>
+                <P>The Society is a non-profit corporation whose financial foundation rests on contributions from scholars and interested parties such as yourself, who wish to honor the memory of Professor Li Fang-kuei by promoting the work and activities outlined above. To this end, speaking on behalf of the directors of the Society, I invite you to consider supporting our common scholarly and academic endeavors through whatever financial contributions you feel able to make, and also by contributing the fruits of your current research to the Bulletin of Chinese Linguisitics. We also invite you to familiarize yourself with the various grant programs and other sources of financial support offered by the Society, and to apply for any of them which you deem appropriate in your individual cases.</P>
+                <p>On behalf of all of us working for the promotion of the Society and its goals, and with hopes of hearing from you whenever you feel able to contact us, I remain</p>
+                <p>Very truly yours,
+                <br>W. South Coblin
+                <br>President, 2008-2014
+                </p>
+                <br>
+
+            <div class="line"></div>
+
+            <h2>The Second Decade of the
+                Li Fang-Kuei Society of Chinese Linguistics</h2>
+                <br>
+            <p>Dear Friends and Colleagues,</p>
+            <p>As the Li Fang-Kuei Society for Chinese Linguistics (henceforth LFK Society), which was founded in 2003 to commemorate and honor the monumental contributions of the late Professor Li Fang-Kuei to Chinese, Tibetan, Tai and American Indian linguistics, enters the second decade, we continue to develop activities that enhance the goals and visions of our Society.</p>
+            <p>In appreciation of the support and of service rendered to the LFK Society by our friends and colleagues from all over the world for excellent reviews of the Bulletin of Chinese Linguistics (henceforth BCL, the flagship journal of LFK Society for dissemination of research results) and to the various LFK Award Committees, we set up in 2019 an Award for Excellent Reviewer. It is due to these reviewers that we can maintain the high academic standards of BCL and the LFK Society.</p>
+            <p>Professor Li Fang-Kuei was not only an open-minded great scholar breaking new paths wherever he stepped, but a true gentleman, a 君子學者 , kind and generous toward fellow and younger scholars.
+                He attended to the upbringing of subsequent generations of young researchers during his life. Following his example, we have implemented two more activities in the spirit of enhancing our support
+                for budding young scholars, encouraging them to continue the Li Fang-Kuei tradition of dedication to excellence and integrity in scholarship.</p>
+        
+            <p>In 2013, we initiated the Li Fang-Kuei Society Young Scholars Symposium on the occasion of the 10th Anniversary Celebration of the Establishment of the LFK Society, focusing on the theme of historical,
+                comparative and typological studies across varieties of Chinese, Tibeto-Burman and Tai-Kadai languages, with the vision of bringing up scholars modeled after Professor Li Fang-Kuei, stimulating interaction
+                and interchange of ideas in a friendly atmosphere. Nineteen promising young scholars from various parts of the world participated in this symposium. A Second Symposium was held in 2018 in remembrance of
+                the 30th Anniversary of the passing of Professor Li Fang-Kuei, with the theme of Legacy and Innovation, and with a special forum on Archaic Chinese, the reconstruction of which has Professor Li Fang-Kuei
+                as the authority. A Third Symposium will take place in 2022.
+                </p>
+    
+            <p>The tradition of fine scholarship cannot be sustained unless it can continue from one generation to the next. Nurturing the next generation of young scholars is one of the visions of the LFK Society, and
+                nurturing it through the Young Scholars Symposia uniquely defines that goal to bring about that vision.</p>
+        
+            <p>In 2019, we started a project called Bulletin of Chinese Linguistics Forum with the goal of encouraging young scholars to take charge of friendly discussions and debate of controversial but meaningful academic topics
+                concentrating on historical, comparative and typological studies, thereby broadening the mind and cultivating tolerance of diverse opinions. Five talented young scholars were selected as Forum Editors.
+                The First Forum will be launched in the year of 2020, followed by the Second Forum in 2021.
+                </p>
+    
+            <p>With your generous support, the torch of fine scholarship and new discovery in the Li Fang-Kuei tradition will transmit from generation to generation! Thank you!
+            </p>
+        
+            <p>Sincerely,
+                <br>Anne O. Yue-Hashimoto 余靄芹
+                <br>Third President of the
+                <br>Li Fang-Kuei Society for Chinese Linguistics
+            </p>
+            
+            <footer>
+                <div id="footer">
+                <a href="#">PO Box 45823, Seattle, WA 98145-0823</a>
+                </div>
+            </footer>
+  
+        </div>
+        
+    
+    </div>
+
+    
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar, #content').toggleClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+        
+        
+    </script>
+</body>
+
+</html>
